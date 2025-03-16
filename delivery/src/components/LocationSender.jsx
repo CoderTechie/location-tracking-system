@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 const LocationSender = () => {
   const [location, setLocation] = useState(null); // Initially null to avoid rendering at 0,0
   const [error, setError] = useState(null);
-
+     
   useEffect(() => {
     const socket = new WebSocket('ws://localhost:8080'); // Connect to WebSocket server
 
